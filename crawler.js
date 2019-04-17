@@ -9,7 +9,7 @@ const exporter = new JSONLineExporter({
     fields: ['options', 'response'],
 });
 
-const cache = new RedisCache({host: '127.0.0.1', port: 6379});
+const cache = new RedisCache({ host: '127.0.0.1', port: 6379 });
 
 (async () => {
     const crawler = await HCCrawler.launch({
